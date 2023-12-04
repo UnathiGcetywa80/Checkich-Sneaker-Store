@@ -1,2 +1,1 @@
-document.querySelector("#currentYear")
-textContent = newDate().getFullYear()
+document.querySelector("#currYear").textContent = new Date().getFullYear()
