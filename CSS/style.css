@@ -2,6 +2,9 @@ img[alt='logo'] {
     width: 10rem;
     height: auto;
 }
+.navbar{
+    position: sticky;
+}
 /* h2 :is(span) {
     display: block;
 } */
