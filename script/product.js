@@ -1,1 +1,2 @@
-//edit your product javascript on this file
+document.querySelector("#currentYear")
+textContent = newDate().getFullYear()

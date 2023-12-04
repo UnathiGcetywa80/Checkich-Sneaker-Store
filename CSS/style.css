@@ -1,1 +1,7 @@
-/*Universal selector*/
+img[alt='logo'] {
+    width: 10rem;
+    height: auto;
+}
+/* h2 :is(span) {
+    display: block;
+} */
