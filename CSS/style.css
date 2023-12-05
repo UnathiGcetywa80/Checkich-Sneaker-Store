@@ -5,6 +5,17 @@ img[alt='logo'] {
 .navbar{
     position: sticky;
 }
-/* h2 :is(span) {
-    display: block;
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+/* input[type "text"] {
+    padding: 8px;
+    width
 } */
+button {
+    padding: 8px 12px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
