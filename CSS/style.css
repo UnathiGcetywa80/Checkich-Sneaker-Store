@@ -1,8 +1,15 @@
-img[alt='logo'] {
+body{
+    background-image: url(https://i.postimg.cc/T1SQCFHk/images-6.jpg);
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+}
+
+/*img[alt='logo'] {
     width: 10rem;
     height: auto;
-}
-.navbar{
+}*/
+/*.navbar{
     position: sticky;
 }
 .container {
@@ -14,8 +21,8 @@ img[alt='logo'] {
     padding: 8px;
     width
 } */
-button {
+/*button {
     padding: 8px 12px;
     cursor: pointer;
     margin-bottom: 10px;
-}
+}*/
