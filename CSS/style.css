@@ -1,25 +1,25 @@
-/* body{
-    background-color: chocolate;
+body{
+    /* background-color: chocolate; */
+    overflow-x: hidden;
     
     
-} */
+}
 
 
 .card{
     width: 18rem; 
     /* height: 100px;  */
 }
-#sortButton ,#addButton{
-    
-}
 #navbarNavAltMarkup{
     background-attachment: fixed;
     background-color: chocolate;
 }
 
-/* #productpage{
-    background-color: blueviolet;
-} */
+#productpage{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto;
+}
   
 /* .card{
     height: 100px;
@@ -49,4 +49,26 @@
     margin-bottom: 10px;
 }
 
-.card-text
+/* Example CSS for footer styling */
+footer {
+    background-color: rgb(5, 4, 4);
+    padding: 20px 0;
+    -webkit-text-fill-color: aliceblue;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* Additional styling based on your design */
+}
+.product {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+  }
