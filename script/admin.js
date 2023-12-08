@@ -1,29 +1,40 @@
 //edit your admin javascript on this file
 document.querySelector("#currYear").textContent = new Date().getFullYear()
-let tableContent = doc.querySelector('[table-product]')
+
 function adminContent() {
-    try{
-        let products = JSON.parse(localStorage.getItem('products')
-        )productsforEach((product, i) =>{
-            tableContent.innerHTML += `
-            <tr>
-            <td>${product.make}</td>
-            <td>${product.amount}</td>
-            <div></div>
-            <button class=btn btn-success>Edit</button>
-            <button class=btn btn-success>Delete</button>
-            <button class = btn btn-success data-bs-toggler = "modal" data-bs-target = "#updateProduct"></button>
-            <div class = "modal-body">form</div>
-            </tr>`
-        })
-    }
+let products = JSON.parse(localStorage.getItem('products'));
+let tableContent = document.querySelector('#admin');
+tableContent.innerHTML = "";
+products.forEach((product, i) => {
+    tableContent.innerHTML = 
+        `
+        <td>
+        <td>${product.name}</td>
+        <td>${product.amount}</td>
+        <td>${product.image}</td>
+        <td>${product.action}</td>
+        <td><img src="${product.image} style= width=300px height=300px"</td>
+        <td>
+        </td>
+        `;
+        
+        // button onclick="editProducts(${index})">Edit</button>
+        // <button onclick="deleteProducts(${JSON.stringify(index)})">Delete</button>
+        // <button onclick="updateproducts"(${index})">Update</button>
+        // <div class="modal-body">form</div>
+        table-product.appendChild();
+    });
 }
-function deleteProduct(item){
-    try{
-        let index = products.findIndex(a => {
-        });
-        products.splice(index.i)
-        localStorage.setItem('products')
-    }
-}
-deleteProduct(item)
+adminContent();
+
+
+
+
+
+
+
+
+
+
+        
+        

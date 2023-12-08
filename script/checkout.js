@@ -14,3 +14,23 @@ function displayCheckoutItems() {
     }
 }
 displayCheckoutItems()
+let clearButton = document.getElementById('clearButton');
+let buyNowButton = document.getElementById('buyNowButton');
+let notificationBanner = document.getElementById('notificationBanner');
+let notificationMessage = document.getElementById('notificationMessage');
+
+function displayNotification(message) {
+    notificationMessage.textContent = message;
+    notificationBanner.style.display = 'block';
+    setTimeout(function() {
+        notificationBanner.style.display = 'none';
+    }, 3000); 
+}
+
+clearButton.addEventListener('click', function() {
+    displayNotification('');
+});
+
+buyNowButton.addEventListener('click', function() {
+    displayNotification('Thank you for shopping with us!');
+});

@@ -1,8 +1,9 @@
 body{
     background-color: rgb(253, 249, 247);
     overflow-x: hidden;
-    
-    
+}
+#prod{
+    gap: 10px;
 }
 
 
@@ -10,10 +11,7 @@ body{
     width: 18rem; 
     /* height: 100px;  */
 }
-#navbarNavAltMarkup{
-    background-attachment: fixed;
-    background-color: chocolate;
-}
+
 
 #productpage{
     display: grid;
@@ -70,9 +68,37 @@ body{
   * {
     box-sizing: border-box;
   }
+  /* Style for the clearButton and buyNowButton */
+#clearButton,
+#buyNowButton {
+    padding: 10px 20px;
+    background-color: #db7734;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+#clearButton:hover,
+#buyNowButton:hover {
+    background-color: #b96a29;
+}
 
-  
-  
+#messageDisplay {
+    background-color: #850404;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 4px;
+}
+.navbar-nav{
+    text-align: center;
+}
+
+#footer-container{
+    margin-top: 100px;
+    border: #b96a29;
+}
+
   
   
   

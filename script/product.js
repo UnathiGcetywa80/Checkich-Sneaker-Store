@@ -1,4 +1,4 @@
-document.querySelector("#currYear").textContent = new Date().getFullYear()
+
 // let shoe = document.getElementById("#prod")
 let products = JSON.parse(localStorage.getItem('products')) || [
   {
@@ -47,7 +47,7 @@ function displayProducts(products) {
                 <p>R${product.price}</p>
             </div>
             <div class="card-footer">
-              <button class="btn btn-success" onclick='addToCart(${JSON.stringify(product)})'>Add to cart</button>
+              <button class="btn btn-success" onclick='addToCart(${index})'>Add to cart</button>
             </div>
           </div>
         `;
