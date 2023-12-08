@@ -28,7 +28,8 @@ function displayNotification(message) {
 }
 
 clearButton.addEventListener('click', function() {
-    displayNotification('');
+    displayCheckoutItems();
+    displayNotification('checkout items cleared.')
 });
 
 buyNowButton.addEventListener('click', function() {
